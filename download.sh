@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# usage: mkdir render && cd render && ../download.sh [from] [to]
+# usage: mkdir render; cd render && ../download.sh [from] [to]
 
 # take html as stdin, filters by pup tags and file extension
 # then curl found files (print link for info)
@@ -37,9 +37,9 @@ for i in $(seq -f "%03g" "$1" "$2"); do
     gs -q -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -o "${i}_gs.pdf" "$i.pdf"
 
     # download html, download extra txt and gif files if available
-    curl -sS "$problem_url" > "$tmp_html"
-    pupcurl 'a attr{href}' '\.txt$' < "$tmp_html"
-    pupcurl 'img attr{src}' '\.gif$' < "$tmp_html"
+    #curl -sS "$problem_url" > "$tmp_html"
+    #pupcurl 'a attr{href}' '\.txt$' < "$tmp_html"
+    #pupcurl 'img attr{src}' '\.gif$' < "$tmp_html"
 done
 
 # remove non-animated GIFs
@@ -51,5 +51,6 @@ done
 gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite \
     -dPDFSETTINGS=/ebook \
     -sOutputFile=problems.pdf ./*_gs.pdf
+
 # create final zip
-zip problems.zip problems.pdf ./*.txt ./*.gif
+#zip problems.zip problems.pdf ./*.txt ./*.gif
