@@ -43,9 +43,9 @@ for i in $(seq -f "%03g" "$1" "$2"); do
 done
 
 # remove non-animated GIFs
-for i in *.gif; do
-    [ "$(identify "$i" | wc -l)" -le 1 ] && rm -v "$i"
-done
+#for i in *.gif; do
+#    [ "$(identify "$i" | wc -l)" -le 1 ] && rm -v "$i"
+#done
 
 # combine all PDFs using gs
 gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite \
