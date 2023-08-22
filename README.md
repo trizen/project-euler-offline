@@ -1,6 +1,6 @@
 Project Euler Offline
 =====================
-All Project Euler problems, with MathJax and images, as a single PDF. Additional text files and animated GIFs are provided. [Get the releases here.](https://github.com/jxu/project-euler-offline/releases)
+All Project Euler problems, with MathJax and images, as a single PDF. Additional text files and animated GIFs are provided. [Get the releases here.](https://github.com/trizen/project-euler-offline/releases)
 
 Please report any inaccuracies or give feedback. Thanks.
 
@@ -18,7 +18,7 @@ Example Usage
 
     mkdir render
     cd render
-    ../download.sh 1 761
+    ../download.sh 1 851
 
 
 Known Bugs/Inconveniences
