@@ -1,6 +1,8 @@
 Project Euler Offline
 =====================
-All Project Euler problems, with MathJax and images, as a single PDF. Additional text files and animated GIFs are provided. [Get the releases here.](https://github.com/trizen/project-euler-offline/releases)
+All Project Euler problems, with MathJax and images, as a single PDF.
+
+[Get the releases here.](https://github.com/trizen/project-euler-offline/releases)
 
 Please report any inaccuracies or give feedback. Thanks.
 
